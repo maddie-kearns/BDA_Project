@@ -1,0 +1,321 @@
+Country,Year,Immigrants
+Germany,1990,816000.0
+"Iran, Islamic Rep.",1990,4174401.0
+Jordan,1990,944459.0
+Lebanon,1990,309021.0
+Palestine,1990,931338.0
+Pakistan,1990,3255975.0
+Sudan,1990,1031050.0
+Syrian Arab Republic,1990,289013.0
+Turkiye,1990,28000.0
+United States,1990,464887.0
+Germany,1991,821500.0
+"Iran, Islamic Rep.",1991,4404995.0
+Jordan,1991,989647.0
+Lebanon,1991,320731.0
+Palestine,1991,987508.0
+Pakistan,1991,3099891.0
+Sudan,1991,729200.0
+Syrian Arab Republic,1991,298260.0
+Turkiye,1991,30462.0
+United States,1991,513885.0
+Germany,1992,1236000.0
+"Iran, Islamic Rep.",1992,4150723.0
+Jordan,1992,1042393.0
+Lebanon,1992,330231.0
+Palestine,1992,1055436.0
+Pakistan,1992,1629218.0
+Sudan,1992,725900.0
+Syrian Arab Republic,1992,312352.0
+Turkiye,1992,28477.0
+United States,1992,579938.0
+Germany,1993,1418000.0
+"Iran, Islamic Rep.",1993,2495038.0
+Jordan,1993,1140664.0
+Lebanon,1993,335846.0
+Palestine,1993,1117275.0
+Pakistan,1993,1479266.0
+Sudan,1993,745200.0
+Syrian Arab Republic,1993,359814.0
+Turkiye,1993,23267.0
+United States,1993,623056.0
+Germany,1994,1354600.0
+"Iran, Islamic Rep.",1994,2236350.0
+Jordan,1994,1240385.0
+Lebanon,1994,343480.0
+Palestine,1994,1178777.0
+Pakistan,1994,1055435.0
+Sudan,1994,727174.0
+Syrian Arab Republic,1994,372750.0
+Turkiye,1994,24927.0
+United States,1994,631046.0
+Germany,1995,1267900.0
+"Iran, Islamic Rep.",1995,2071988.0
+Jordan,1995,1329466.0
+Lebanon,1995,351640.0
+Palestine,1995,1224996.0
+Pakistan,1995,1202493.0
+Sudan,1995,674071.0
+Syrian Arab Republic,1995,378729.0
+Turkiye,1995,12841.0
+United States,1995,623279.0
+Germany,1996,1266000.0
+"Iran, Islamic Rep.",1996,2030359.0
+Jordan,1996,1390473.0
+Lebanon,1996,358666.0
+Palestine,1996,1270333.0
+Pakistan,1996,1202703.0
+Sudan,1996,393874.0
+Syrian Arab Republic,1996,379894.0
+Turkiye,1996,8166.0
+United States,1996,607005.0
+Germany,1997,1049000.0
+"Iran, Islamic Rep.",1997,1982553.0
+Jordan,1997,1438102.0
+Lebanon,1997,365160.0
+Palestine,1997,1308438.0
+Pakistan,1997,1202733.0
+Sudan,1997,374414.0
+Syrian Arab Republic,1997,383907.0
+Turkiye,1997,2448.0
+United States,1997,563813.0
+Germany,1998,949200.0
+"Iran, Islamic Rep.",1998,1931332.0
+Jordan,1998,1488225.0
+Lebanon,1998,371294.0
+Palestine,1998,1348288.0
+Pakistan,1998,1202462.0
+Sudan,1998,391496.0
+Syrian Arab Republic,1998,391004.0
+Turkiye,1998,2529.0
+United States,1998,533951.0
+Germany,1999,975500.0
+"Iran, Islamic Rep.",1999,1835688.0
+Jordan,1999,1542413.0
+Lebanon,1999,377612.0
+Palestine,1999,1384655.0
+Pakistan,1999,1202015.0
+Sudan,1999,390995.0
+Syrian Arab Republic,1999,384846.0
+Turkiye,1999,2810.0
+United States,1999,521134.0
+Germany,2000,906000.0
+"Iran, Islamic Rep.",2000,1868000.0
+Jordan,2000,1610630.0
+Lebanon,2000,382744.0
+Palestine,2000,1428891.0
+Pakistan,2000,2001460.0
+Sudan,2000,414928.0
+Syrian Arab Republic,2000,390987.0
+Turkiye,2000,3096.0
+United States,2000,508209.0
+Germany,2001,903000.0
+"Iran, Islamic Rep.",2001,1868000.0
+Jordan,2001,1663289.0
+Lebanon,2001,387734.0
+Palestine,2001,1483394.0
+Pakistan,2001,2198792.0
+Sudan,2001,349209.0
+Syrian Arab Republic,2001,399596.0
+Turkiye,2001,3466.0
+United States,2001,515851.0
+Germany,2002,980001.0
+"Iran, Islamic Rep.",2002,1306599.0
+Jordan,2002,1699469.0
+Lebanon,2002,392059.0
+Palestine,2002,1532589.0
+Pakistan,2002,1227429.0
+Sudan,2002,328177.0
+Syrian Arab Republic,2002,408515.0
+Turkiye,2002,3302.0
+United States,2002,485173.0
+Germany,2003,960393.0
+"Iran, Islamic Rep.",2003,984895.0
+Jordan,2003,1741365.0
+Lebanon,2003,397051.0
+Palestine,2003,1587920.0
+Pakistan,2003,1124295.0
+Sudan,2003,138162.0
+Syrian Arab Republic,2003,417503.0
+Turkiye,2003,2488.0
+United States,2003,452536.0
+Germany,2004,876614.0
+"Iran, Islamic Rep.",2004,1045975.0
+Jordan,2004,1777765.0
+Lebanon,2004,400905.0
+Palestine,2004,1634952.0
+Pakistan,2004,1290980.0
+Sudan,2004,141587.0
+Syrian Arab Republic,2004,437337.0
+Turkiye,2004,3029.0
+United States,2004,420788.0
+Germany,2005,699996.0
+"Iran, Islamic Rep.",2005,974301.0
+Jordan,2005,1828839.0
+Lebanon,2005,405248.0
+Palestine,2005,1685851.0
+Pakistan,2005,1084689.0
+Sudan,2005,147255.0
+Syrian Arab Republic,2005,458135.0
+Turkiye,2005,2395.0
+United States,2005,379330.0
+Germany,2006,605329.0
+"Iran, Islamic Rep.",2006,968368.0
+Jordan,2006,2358587.0
+Lebanon,2006,428602.0
+Palestine,2006,1739266.0
+Pakistan,2006,1044464.0
+Sudan,2006,196200.0
+Syrian Arab Republic,2006,1144565.0
+Turkiye,2006,2624.0
+United States,2006,843434.0
+Germany,2007,578866.0
+"Iran, Islamic Rep.",2007,963544.0
+Jordan,2007,2403763.0
+Lebanon,2007,464292.0
+Palestine,2007,1793901.0
+Pakistan,2007,2035025.0
+Sudan,2007,222720.0
+Syrian Arab Republic,2007,1955234.0
+Turkiye,2007,6941.0
+United States,2007,281154.0
+Germany,2008,582719.0
+"Iran, Islamic Rep.",2008,980104.0
+Jordan,2008,2452009.0
+Lebanon,2008,472601.0
+Palestine,2008,1836123.0
+Pakistan,2008,1780935.0
+Sudan,2008,181605.0
+Syrian Arab Republic,2008,1567590.0
+Turkiye,2008,11090.0
+United States,2008,279468.0
+Germany,2009,593787.0
+"Iran, Islamic Rep.",2009,1070483.0
+Jordan,2009,2434485.0
+Lebanon,2009,476038.0
+Palestine,2009,1885188.0
+Pakistan,2009,1740709.0
+Sudan,2009,186292.0
+Syrian Arab Republic,2009,1526573.0
+Turkiye,2009,10339.0
+United States,2009,275393.0
+Germany,2010,594250.0
+"Iran, Islamic Rep.",2010,1073363.0
+Jordan,2010,2393339.0
+Lebanon,2010,438123.0
+Palestine,2010,1841769.0
+Pakistan,2010,1900619.0
+Sudan,2010,178305.0
+Syrian Arab Republic,2010,1482272.0
+Turkiye,2010,10025.0
+United States,2010,264505.0
+Germany,2011,571672.0
+"Iran, Islamic Rep.",2011,886465.0
+Jordan,2011,2430580.0
+Lebanon,2011,445125.0
+Palestine,2011,1895043.0
+Pakistan,2011,1702698.0
+Sudan,2011,139407.0
+Syrian Arab Republic,2011,1242381.0
+Turkiye,2011,14457.0
+United States,2011,264752.0
+Germany,2012,589735.0
+"Iran, Islamic Rep.",2012,868239.0
+Jordan,2012,2337341.0
+Lebanon,2012,575456.0
+Palestine,2012,1944544.0
+Pakistan,2012,1638452.0
+Sudan,2012,152188.0
+Syrian Arab Republic,2012,975685.0
+Turkiye,2012,267063.0
+United States,2012,262006.0
+Germany,2013,187545.0
+"Iran, Islamic Rep.",2013,857352.0
+Jordan,2013,2712877.0
+Lebanon,2013,1303867.0
+Palestine,2013,1994493.0
+Pakistan,2013,1616505.0
+Sudan,2013,159848.0
+Syrian Arab Republic,2013,666541.0
+Turkiye,2013,609931.0
+United States,2013,263653.0
+Germany,2014,216956.0
+"Iran, Islamic Rep.",2014,982025.0
+Jordan,2014,2771492.0
+Lebanon,2014,1606698.0
+Palestine,2014,2051096.0
+Pakistan,2014,1505521.0
+Sudan,2014,277818.0
+Syrian Arab Republic,2014,677751.0
+Turkiye,2014,1587365.0
+United States,2014,267214.0
+Germany,2015,316098.0
+"Iran, Islamic Rep.",2015,979435.0
+Jordan,2015,2808343.0
+Lebanon,2015,1529213.0
+Palestine,2015,2104001.0
+Pakistan,2015,1561157.0
+Sudan,2015,309632.0
+Syrian Arab Republic,2015,555766.0
+Turkiye,2015,2541348.0
+United States,2015,273198.0
+Germany,2016,669468.0
+"Iran, Islamic Rep.",2016,979435.0
+Jordan,2016,2860679.0
+Lebanon,2016,1476623.0
+Palestine,2016,2158274.0
+Pakistan,2016,1352551.0
+Sudan,2016,421459.0
+Syrian Arab Republic,2016,562821.0
+Turkiye,2016,2869419.0
+United States,2016,272963.0
+Germany,2017,970357.0
+"Iran, Islamic Rep.",2017,979435.0
+Jordan,2017,2897751.0
+Lebanon,2017,1468431.0
+Palestine,2017,2214783.0
+Pakistan,2017,1393132.0
+Sudan,2017,906590.0
+Syrian Arab Republic,2017,571298.0
+Turkiye,2017,3480350.0
+United States,2017,287135.0
+Germany,2018,1063835.0
+"Iran, Islamic Rep.",2018,979435.0
+Jordan,2018,2957877.0
+Lebanon,2018,1424728.0
+Palestine,2018,2267747.0
+Pakistan,2018,1404008.0
+Sudan,2018,1078280.0
+Syrian Arab Republic,2018,578956.0
+Turkiye,2018,3681688.0
+United States,2018,313242.0
+Germany,2019,1146682.0
+"Iran, Islamic Rep.",2019,979435.0
+Jordan,2019,2966079.0
+Lebanon,2019,1392174.0
+Palestine,2019,2319073.0
+Pakistan,2019,1419596.0
+Sudan,2019,1055489.0
+Syrian Arab Republic,2019,578525.0
+Turkiye,2019,3579531.0
+United States,2019,341715.0
+Germany,2020,1210596.0
+"Iran, Islamic Rep.",2020,800025.0
+Jordan,2020,3009472.0
+Lebanon,2020,1349925.0
+Palestine,2020,2348243.0
+Pakistan,2020,1438940.0
+Sudan,2020,1040288.0
+Syrian Arab Republic,2020,584034.0
+Turkiye,2020,3652362.0
+United States,2020,340846.0
+Germany,2021,1255694.0
+"Iran, Islamic Rep.",2021,798343.0
+Jordan,2021,3047612.0
+Lebanon,2021,1328541.0
+Palestine,2021,2400208.0
+Pakistan,2021,1491070.0
+Sudan,2021,1103918.0
+Syrian Arab Republic,2021,589542.0
+Turkiye,2021,3759817.0
+United States,2021,339179.0

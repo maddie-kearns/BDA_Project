@@ -1,0 +1,321 @@
+Country,Year,Refugees
+Afghanistan,1990,6339095.0
+Angola,1990,407760.0
+Bosnia and Herzegovina,1990,
+Ethiopia,1990,1345928.0
+Iraq,1990,1133805.0
+Myanmar,1990,24.0
+Somalia,1990,470174.0
+Sudan,1990,523996.0
+Syrian Arab Republic,1990,2148.0
+Vietnam,1990,496029.0
+Afghanistan,1991,6306301.0
+Angola,1991,381638.0
+Bosnia and Herzegovina,1991,
+Ethiopia,1991,251243.0
+Iraq,1991,1321853.0
+Myanmar,1991,40052.0
+Somalia,1991,732596.0
+Sudan,1991,196242.0
+Syrian Arab Republic,1991,3037.0
+Vietnam,1991,498323.0
+Afghanistan,1992,4552153.0
+Angola,1992,300494.0
+Bosnia and Herzegovina,1992,437501.0
+Ethiopia,1992,313131.0
+Iraq,1992,1343824.0
+Myanmar,1992,245127.0
+Somalia,1992,812196.0
+Sudan,1992,267767.0
+Syrian Arab Republic,1992,4408.0
+Vietnam,1992,517111.0
+Afghanistan,1993,3374575.0
+Angola,1993,323822.0
+Bosnia and Herzegovina,1993,618428.0
+Ethiopia,1993,251828.0
+Iraq,1993,771074.0
+Myanmar,1993,281571.0
+Somalia,1993,574612.0
+Sudan,1993,393868.0
+Syrian Arab Republic,1993,5412.0
+Vietnam,1993,527625.0
+Afghanistan,1994,2731166.0
+Angola,1994,282570.0
+Bosnia and Herzegovina,1994,776090.0
+Ethiopia,1994,226429.0
+Iraq,1994,749833.0
+Myanmar,1994,204512.0
+Somalia,1994,631420.0
+Sudan,1994,405129.0
+Syrian Arab Republic,1994,7087.0
+Vietnam,1994,539095.0
+Afghanistan,1995,2679132.0
+Angola,1995,246653.0
+Bosnia and Herzegovina,1995,769753.0
+Ethiopia,1995,100986.0
+Iraq,1995,718717.0
+Myanmar,1995,152301.0
+Somalia,1995,638695.0
+Sudan,1995,445277.0
+Syrian Arab Republic,1995,7995.0
+Vietnam,1995,543536.0
+Afghanistan,1996,2674234.0
+Angola,1996,249686.0
+Bosnia and Herzegovina,1996,993868.0
+Ethiopia,1996,96264.0
+Iraq,1996,714727.0
+Myanmar,1996,143019.0
+Somalia,1996,636984.0
+Sudan,1996,475302.0
+Syrian Arab Republic,1996,8611.0
+Vietnam,1996,518335.0
+Afghanistan,1997,2676675.0
+Angola,1997,267687.0
+Bosnia and Herzegovina,1997,849240.0
+Ethiopia,1997,84386.0
+Iraq,1997,707342.0
+Myanmar,1997,135771.0
+Somalia,1997,608086.0
+Sudan,1997,364571.0
+Syrian Arab Republic,1997,8653.0
+Vietnam,1997,476795.0
+Afghanistan,1998,2667118.0
+Angola,1998,319420.0
+Bosnia and Herzegovina,1998,640077.0
+Ethiopia,1998,70663.0
+Iraq,1998,675030.0
+Myanmar,1998,133408.0
+Somalia,1998,557953.0
+Sudan,1998,390001.0
+Syrian Arab Republic,1998,8132.0
+Vietnam,1998,435437.0
+Afghanistan,1999,2601690.0
+Angola,1999,353472.0
+Bosnia and Herzegovina,1999,598193.0
+Ethiopia,1999,71040.0
+Iraq,1999,642875.0
+Myanmar,1999,131661.0
+Somalia,1999,524604.0
+Sudan,1999,485449.0
+Syrian Arab Republic,1999,6693.0
+Vietnam,1999,405378.0
+Afghanistan,2000,3587327.0
+Angola,2000,433756.0
+Bosnia and Herzegovina,2000,504980.0
+Ethiopia,2000,66396.0
+Iraq,2000,526165.0
+Myanmar,2000,137121.0
+Somalia,2000,475644.0
+Sudan,2000,494351.0
+Syrian Arab Republic,2000,5868.0
+Vietnam,2000,370753.0
+Afghanistan,2001,3809763.0
+Angola,2001,470616.0
+Bosnia and Herzegovina,2001,447326.0
+Ethiopia,2001,58980.0
+Iraq,2001,530508.0
+Myanmar,2001,145849.0
+Somalia,2001,440120.0
+Sudan,2001,489931.0
+Syrian Arab Republic,2001,4861.0
+Vietnam,2001,353211.0
+Afghanistan,2002,2510294.0
+Angola,2002,435415.0
+Bosnia and Herzegovina,2002,406456.0
+Ethiopia,2002,61235.0
+Iraq,2002,422504.0
+Myanmar,2002,148493.0
+Somalia,2002,432304.0
+Sudan,2002,508863.0
+Syrian Arab Republic,2002,18908.0
+Vietnam,2002,373732.0
+Afghanistan,2003,2136039.0
+Angola,2003,329573.0
+Bosnia and Herzegovina,2003,300012.0
+Ethiopia,2003,62674.0
+Iraq,2003,368577.0
+Myanmar,2003,151370.0
+Somalia,2003,402329.0
+Sudan,2003,606230.0
+Syrian Arab Republic,2003,20816.0
+Vietnam,2003,363170.0
+Afghanistan,2004,2414460.0
+Angola,2004,228842.0
+Bosnia and Herzegovina,2004,228813.0
+Ethiopia,2004,63153.0
+Iraq,2004,311889.0
+Myanmar,2004,160997.0
+Somalia,2004,389287.0
+Sudan,2004,730631.0
+Syrian Arab Republic,2004,21430.0
+Vietnam,2004,349793.0
+Afghanistan,2005,2166139.0
+Angola,2005,215811.0
+Bosnia and Herzegovina,2005,109931.0
+Ethiopia,2005,65447.0
+Iraq,2005,262302.0
+Myanmar,2005,164851.0
+Somalia,2005,395544.0
+Sudan,2005,693621.0
+Syrian Arab Republic,2005,16395.0
+Vietnam,2005,358268.0
+Afghanistan,2006,2107510.0
+Angola,2006,206482.0
+Bosnia and Herzegovina,2006,199948.0
+Ethiopia,2006,74007.0
+Iraq,2006,1450908.0
+Myanmar,2006,202817.0
+Somalia,2006,464026.0
+Sudan,2006,686296.0
+Syrian Arab Republic,2006,12327.0
+Vietnam,2006,374278.0
+Afghanistan,2007,3057655.0
+Angola,2007,186137.0
+Bosnia and Herzegovina,2007,78267.0
+Ethiopia,2007,59845.0
+Iraq,2007,2309246.0
+Myanmar,2007,191308.0
+Somalia,2007,457345.0
+Sudan,2007,523029.0
+Syrian Arab Republic,2007,13684.0
+Vietnam,2007,327770.0
+Afghanistan,2008,2833116.0
+Angola,2008,171374.0
+Bosnia and Herzegovina,2008,74358.0
+Ethiopia,2008,63863.0
+Iraq,2008,1903516.0
+Myanmar,2008,184410.0
+Somalia,2008,561145.0
+Sudan,2008,419249.0
+Syrian Arab Republic,2008,15206.0
+Vietnam,2008,328175.0
+Afghanistan,2009,2887114.0
+Angola,2009,141006.0
+Bosnia and Herzegovina,2009,70006.0
+Ethiopia,2009,62877.0
+Iraq,2009,1785215.0
+Myanmar,2009,406667.0
+Somalia,2009,678296.0
+Sudan,2009,368178.0
+Syrian Arab Republic,2009,17915.0
+Vietnam,2009,339299.0
+Afghanistan,2010,3054699.0
+Angola,2010,134851.0
+Bosnia and Herzegovina,2010,62996.0
+Ethiopia,2010,68838.0
+Iraq,2010,1683576.0
+Myanmar,2010,415662.0
+Somalia,2010,770141.0
+Sudan,2010,387265.0
+Syrian Arab Republic,2010,18451.0
+Vietnam,2010,338707.0
+Afghanistan,2011,2664423.0
+Angola,2011,128657.0
+Bosnia and Herzegovina,2011,58572.0
+Ethiopia,2011,70601.0
+Iraq,2011,1428306.0
+Myanmar,2011,414615.0
+Somalia,2011,1077038.0
+Sudan,2011,500004.0
+Syrian Arab Republic,2011,19931.0
+Vietnam,2011,337828.0
+Afghanistan,2012,2586132.0
+Angola,2012,19253.0
+Bosnia and Herzegovina,2012,51815.0
+Ethiopia,2012,74964.0
+Iraq,2012,746204.0
+Myanmar,2012,415363.0
+Somalia,2012,1136709.0
+Sudan,2012,568934.0
+Syrian Arab Republic,2012,729011.0
+Vietnam,2012,336936.0
+Afghanistan,2013,2556483.0
+Angola,2013,10274.0
+Bosnia and Herzegovina,2013,26787.0
+Ethiopia,2013,77109.0
+Iraq,2013,401461.0
+Myanmar,2013,479594.0
+Somalia,2013,1121760.0
+Sudan,2013,648936.0
+Syrian Arab Republic,2013,2468323.0
+Vietnam,2013,314109.0
+Afghanistan,2014,2596259.0
+Angola,2014,9468.0
+Bosnia and Herzegovina,2014,21883.0
+Ethiopia,2014,86857.0
+Iraq,2014,369960.0
+Myanmar,2014,479006.0
+Somalia,2014,1106430.0
+Sudan,2014,665956.0
+Syrian Arab Republic,2014,3887490.0
+Vietnam,2014,313420.0
+Afghanistan,2015,2666294.0
+Angola,2015,11855.0
+Bosnia and Herzegovina,2015,18763.0
+Ethiopia,2015,85839.0
+Iraq,2015,264086.0
+Myanmar,2015,451804.0
+Somalia,2015,1123144.0
+Sudan,2015,627080.0
+Syrian Arab Republic,2015,4873236.0
+Vietnam,2015,313152.0
+Afghanistan,2016,2501447.0
+Angola,2016,8388.0
+Bosnia and Herzegovina,2016,18194.0
+Ethiopia,2016,83958.0
+Iraq,2016,316056.0
+Myanmar,2016,490285.0
+Somalia,2016,1012320.0
+Sudan,2016,650391.0
+Syrian Arab Republic,2016,5524511.0
+Vietnam,2016,329341.0
+Afghanistan,2017,2624265.0
+Angola,2017,8292.0
+Bosnia and Herzegovina,2017,17690.0
+Ethiopia,2017,87448.0
+Iraq,2017,362536.0
+Myanmar,2017,1156742.0
+Somalia,2017,986386.0
+Sudan,2017,694556.0
+Syrian Arab Republic,2017,6310498.0
+Vietnam,2017,334064.0
+Afghanistan,2018,2681267.0
+Angola,2018,8243.0
+Bosnia and Herzegovina,2018,16956.0
+Ethiopia,2018,92232.0
+Iraq,2018,372332.0
+Myanmar,2018,1145149.0
+Somalia,2018,949637.0
+Sudan,2018,724787.0
+Syrian Arab Republic,2018,6654374.0
+Vietnam,2018,334464.0
+Afghanistan,2019,2727556.0
+Angola,2019,8176.0
+Bosnia and Herzegovina,2019,16556.0
+Ethiopia,2019,93467.0
+Iraq,2019,336274.0
+Myanmar,2019,1076826.0
+Somalia,2019,901596.0
+Sudan,2019,734780.0
+Syrian Arab Republic,2019,6615249.0
+Vietnam,2019,316441.0
+Afghanistan,2020,2594827.0
+Angola,2020,8196.0
+Bosnia and Herzegovina,2020,15578.0
+Ethiopia,2020,151426.0
+Iraq,2020,333200.0
+Myanmar,2020,1103245.0
+Somalia,2020,812356.0
+Sudan,2020,787823.0
+Syrian Arab Republic,2020,6702910.0
+Vietnam,2020,316728.0
+Afghanistan,2021,2712858.0
+Angola,2021,11403.0
+Bosnia and Herzegovina,2021,18189.0
+Ethiopia,2021,149125.0
+Iraq,2021,343897.0
+Myanmar,2021,1177029.0
+Somalia,2021,776678.0
+Sudan,2021,825290.0
+Syrian Arab Republic,2021,6848845.0
+Vietnam,2021,317737.0
