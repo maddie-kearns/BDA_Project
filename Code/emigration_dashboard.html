@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<meta charset="utf-8">
+
+<style>
+img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+</style>
+
+<!-- Load d3.js -->
+<script src="https://d3js.org/d3.v4.js"></script>
+
+<!-- Color Scale -->
+<script src="https://d3js.org/d3-scale-chromatic.v1.min.js"></script>
+
+	<h2>Emigration Trends</h2>
+
+	<h3>Yearly Barplot</h3>
+
+	<p>Choose a year to see emigration numbers from common origins</p>
+	
+	<!-- Add buttons -->
+	<button onclick="update1('1990')">1990</button>
+	<button onclick="update1('1995')">1995</button>
+	<button onclick="update1('2000')">2000</button>
+	<button onclick="update1('2005')">2005</button>
+	<button onclick="update1('2010')">2010</button>
+	<button onclick="update1('2015')">2015</button>
+	<button onclick="update1('2020')">2020</button>
+
+	<!-- Create a div where the graph will take place -->
+	<div id="my_dataviz" style="width:800px; margin:0 auto;"></div>
+
+	<script>
+
+	// set the dimensions and margins of the graph
+	var margin = {top: 50, right: 30, bottom: 100, left: 100},
+		width = 600 - margin.left - margin.right,
+		height = 500 - margin.top - margin.bottom;
+
+	// append the svg object to the body of the page
+	var svg = d3.select("#my_dataviz")
+	  .append("svg")
+		.attr("width", width + margin.left + margin.right)
+		.attr("height", height + margin.top + margin.bottom)
+	  .append("g")
+		.attr("transform",
+			  "translate(" + margin.left + "," + margin.top + ")");
+
+	// Initialize the X axis
+	var x = d3.scaleBand()
+	  .range([ 0, width ])
+	  .padding(0.2);
+	var xAxis = svg.append("g")
+	  .attr("transform", "translate(0," + height + ")")
+
+	// Initialize the Y axis
+	var y = d3.scaleLinear()
+	  .range([ height, 0]);
+	var yAxis = svg.append("g")
+	  .attr("class", "myYaxis")
+
+	// A function that create / update the plot for a given variable:
+	function update1(selectedVar) {
+
+	  // Parse the Data
+	  d3.csv("https://raw.githubusercontent.com/maddie-kearns/BDA_Project/main/Data/barplot-origin.csv", function(data) {
+
+		// X axis
+		x.domain(data.map(function(d) { return d.Country; }))
+		xAxis
+			.transition()
+			.duration(1000)
+			.call(d3.axisBottom(x))
+			.selectAll("text")
+			.attr("transform", "translate(-10,10)rotate(-45)")
+			.style("text-anchor", "end");
+		
+		svg.append("text")
+						.attr("class", "x label")
+						.attr("text-anchor", "middle")
+						.attr("x", width/2)
+						.attr("y", height + 70)
+						.text("Country");
+
+		// Add Y axis
+		y.domain([0, d3.max(data, function(d) { return +d[selectedVar] }) ]);
+		yAxis
+			.transition()
+			.duration(1000)
+			.call(d3.axisLeft(y));
+		
+		// text label for the y axis
+		svg.append("text")
+		  .attr("transform", "rotate(-90)")
+		  .attr("y", 0 - margin.left)
+		  .attr("x",0 - (height / 2))
+		  .attr("dy", "1em")
+		  .style("text-anchor", "middle")
+		  .text("Emigration Numbers");
+
+		// variable u: map data to existing bars
+		var u = svg.selectAll("rect")
+		  .data(data)
+
+		// update bars
+		u
+		  .enter()
+		  .append("rect")
+		  .merge(u)
+		  .transition()
+		  .duration(1000)
+			.attr("x", function(d) { return x(d.Country); })
+			.attr("y", function(d) { return y(d[selectedVar]); })
+			.attr("width", x.bandwidth())
+			.attr("height", function(d) { return height - y(d[selectedVar]); })
+			.attr("fill", "#8dd3c7")
+			
+		// Title 
+		svg.append("text")
+			.attr("x", (width / 2))
+			.attr("y", -10)
+			.attr("text-anchor", "middle")
+			.style("font-size", "16px")
+			.style("text-decoration", "underline")
+			.text("Refugee Emigration Numbers for Most Common Destinations ");
+	  })
+
+	}
+
+	// Initialize plot
+	update1('2000')
+
+	</script>
+	
+	<h3>Country Line Plots</h3
+	
+	<p>Here we can analyse the refugee emigration trends over time from the countries with the highest average yearly refugee numbers.</p>
+	
+
+	<!-- Initialize a select button -->
+	<select id="selectButton2"></select>
+
+	<div id="my_dataviz2" style="width:800px; margin:0 auto;"></div>
+
+	<script>
+
+		// set the dimensions and margins of the graph
+		var margin2 = {top: 10, right: 30, bottom: 100, left: 100},
+			width2 = 600 - margin2.left - margin2.right,
+			height2 = 500 - margin2.top - margin2.bottom;
+
+		// append the svg object to the body of the page
+		var svg2 = d3.select("#my_dataviz2")
+		  .append("svg")
+			.attr("width", width2 + margin2.left + margin2.right)
+			.attr("height", height2 + margin2.top + margin2.bottom)
+		  .append("g")
+			.attr("transform",
+				  "translate(" + margin2.left + "," + margin2.top + ")");
+
+		//Read the data
+		d3.csv("https://raw.githubusercontent.com/maddie-kearns/BDA_Project/main/Data/line-origin.csv", 
+
+			// When reading the csv, I must format variables:
+			function(d){
+			return {Year : d3.timeParse("%Y")(d.Year), Refugees : d.Refugees, Country : d.Country }},
+
+			function(data) {
+
+			// List of groups (here I have one group per column)
+			var allGroup = d3.map(data, function(d){return(d.Country)}).keys()
+
+			// add the options to the button
+			d3.select("#selectButton2")
+			  .selectAll('myOptions')
+				.data(allGroup)
+			  .enter()
+				.append('option')
+			  .text(function (d) { return d; }) // text showed in the menu
+			  .attr("value", function (d) { return d; }) // corresponding value returned by the button
+
+			// A color scale: one color for each group
+			var color2 = d3.scaleOrdinal()
+			  .domain(allGroup)
+			  .range(["#8dd3c7", "#e1ad01", "#bebada", "#fb8072", "#80b1d3", "#fdb462", "#b3de69", "#fccde5", "#d9d9d9", "#bc80bd"]);
+			  
+			// Add X axis
+			
+			var x2 = d3.scaleTime()
+			  .domain(d3.extent(data, function(d) { return d.Year; }))
+			  .range([ 0, width2 ]);
+			
+			var xAxis2 = svg2.append("g")
+							.attr("class", "axis")
+							.attr("transform", "translate(0," + height2 + ")")
+							.call(d3.axisBottom(x2));
+			xAxis2
+					.call(d3.axisBottom(x2))
+					.selectAll("text")
+					.attr("transform", "translate(-10,10)rotate(-45)")
+					.style("text-anchor", "end");
+			svg2.append("text")
+				.attr("class", "x label")
+				.attr("text-anchor", "middle")
+				.attr("x", width2/2)
+				.attr("y", height2 + 70)
+				.text("Year");
+							
+			// Add Y axis
+			var y2 = d3.scaleLinear()
+			  .domain([0, d3.max(data, function(d) { return +d.Refugees; })])
+			  .range([ height2, 0 ]);
+			svg2.append("g")
+			  .call(d3.axisLeft(y2));
+			  
+			 // text label for the y axis
+			svg2.append("text")
+			  .attr("transform", "rotate(-90)")
+			  .attr("y", 0 - margin2.left)
+			  .attr("x",0 - (height2 / 2))
+			  .attr("dy", "1em")
+			  .style("text-anchor", "middle")
+			  .text("Leaving Refugees Numbers");
+
+			// Initialize line with first group of the list
+			var line2 = svg2
+			  .append('g')
+			  .append("path")
+				.datum(data.filter(function(d){return d.Country==allGroup[0]}))
+				.attr("d", d3.line()
+				  .x(function(d) { return x2(d.Year) })
+				  .y(function(d) { return y2(+d.Refugees) })
+				)
+				.attr("stroke", function(d){ return color2("Afghanistan") })
+				.style("stroke-width", 4)
+				.style("fill", "none")
+
+			// A function that update the chart
+			function update2(selectedGroup) {
+
+			  // Create new data with the selection?
+			  var dataFilter = data.filter(function(d){return d.Country==selectedGroup})
+
+			  // Give these new data to update line
+				line2
+				  .datum(dataFilter)
+				  .transition()
+				  .duration(1000)
+				  .attr("d", d3.line()
+					.x(function(d) { return x2(d.Year) })
+					.y(function(d) { return y2(+d.Refugees) })
+				  )
+				  .attr("stroke", function(d){ return color2(selectedGroup) })				
+			}
+
+			// When the button is changed, run the updateChart function
+			d3.select("#selectButton2").on("change", function(d) {
+				// recover the option that has been chosen
+				var selectedOption = d3.select(this).property("value")
+				// run the updateChart function with this selected option
+				update2(selectedOption)
+			})
+		})
+
+	</script>
+	
+	<p>Plotting all lines on the same chart looked messy and was unclear as there was too much data. 
+	Hence, here they have been plotted adjacently on the same axes for trend comparison.</p>
+	
+	<!-- Create a div where the graph will take place -->
+	<div id="my_dataviz3"></div>
+
+	<script>
+
+		// set the dimensions and margins of the graph
+		var margin3 = {top: 30, right: 30, bottom: 60, left: 80},
+			width3 = 300 - margin3.left - margin3.right,
+			height3 = 300 - margin3.top - margin3.bottom;
+
+		//Read the data
+		d3.csv("https://raw.githubusercontent.com/maddie-kearns/BDA_Project/main/Data/line-origin.csv", 
+		
+		// When reading the csv, I must format variables:
+			function(d){
+			return {Year : d3.timeParse("%Y")(d.Year), Refugees : d.Refugees, Country : d.Country }},
+
+		function(data) {
+
+		  // group the data: I want to draw one line per group
+		  var sumstat = d3.nest() // nest function allows to group the calculation per level of a factor
+			.key(function(d) { return d.Country;})
+			.entries(data);
+
+		  // What is the list of groups?
+		  allKeys = sumstat.map(function(d){return d.key})
+
+		  // Add an svg element for each group. The will be one beside each other and will go on the next row when no more room available
+		  var svg3 = d3.select("#my_dataviz3")
+			.selectAll("uniqueChart")
+			.data(sumstat)
+			.enter()
+			.append("svg")
+			  .attr("width", width3 + margin3.left + margin3.right)
+			  .attr("height", height3 + margin3.top + margin3.bottom)
+			.append("g")
+			  .attr("transform", "translate(" + margin3.left + "," + margin3.top + ")");
+
+		  // Add X axis --> it is a date format
+		  var x3 = d3.scaleTime()
+			.domain(d3.extent(data, function(d) { return d.Year; }))
+			.range([ 0, width3 ]);
+		  svg3
+			.append("g")
+			.attr("transform", "translate(0," + height3 + ")")
+			.call(d3.axisBottom(x3).ticks(3));
+			
+		svg3.append("text")
+				.attr("class", "x label")
+				.attr("text-anchor", "middle")
+				.attr("x", width3/2)
+				.attr("y", height3 + 30)
+				.text("Year");
+
+		  //Add Y axis
+		  var y3 = d3.scaleLinear()
+			.domain([0, d3.max(data, function(d) { return +d.Refugees; })])
+			.range([ height3, 0 ]);
+		  svg3.append("g")
+			.call(d3.axisLeft(y3).ticks(5));
+			
+		// text label for the y axis
+		svg3.append("text")
+		  .attr("transform", "rotate(-90)")
+		  .attr("y", 0 - margin3.left)
+		  .attr("x",0 - (height3 / 2))
+		  .attr("dy", "1em")
+		  .style("text-anchor", "middle")
+		  .text("Leaving Refugee Numbers");
+
+		  // color palette
+		  var color3 = d3.scaleOrdinal()
+			.domain(allKeys)
+			.range(["#8dd3c7", "#e1ad01", "#bebada", "#fb8072", "#80b1d3", "#fdb462", "#b3de69", "#fccde5", "#d9d9d9", "#bc80bd"])
+		  // Draw the line
+		  svg3
+			.append("path")
+			  .attr("fill", "none")
+			  .attr("stroke", function(d){ return color3(d.key) })
+			  .attr("stroke-width", 1.9)
+			  .attr("d", function(d){
+				return d3.line()
+				  .x(function(d) { return x3(d.Year); })
+				  .y(function(d) { return y3(+d.Refugees); })
+				  (d.values)
+			  })
+
+		  // Add titles
+		  svg3
+			.append("text")
+			.attr("text-anchor", "start")
+			.attr("y", -5)
+			.attr("x", 0)
+			.text(function(d){ return(d.key)})
+			.style("fill", function(d){ return color3(d.key) })
+
+		})
+	</script>
+	
+	<p>The following static images were generated in the Python scripts attached with this 
+	project. 
+	
+	<h3>Refugee Emigration Choropleths</h3>
+	
+	<p>These graphs show the percentage of each country's population that emigrated as refugees
+	that year. These plots are for 1990 and 2021, but the 
+	program is capable of generating similar plots for any years in this range.</p>
+	
+	<p>The first image is the 1990 choropleth. It clearly shows that the majority of emigration happened in Africa
+	and the Middle East - Afghanistan is particularly emphasised, although the Afghanistan War had not yet begun. 
+	A contributing factor to this was likely the critical state of the Afghan economy in 1990, which was largely caused
+	by the growing chaos of local warlords charging increasingly high tolls and protection taxes for farmers and poppy 
+	farmers alike. This situation was also the precursor to the rise of the Taliban. Ethiopia was similarly chaotic, 
+	in the midst of a civil war.</p>
+	<br>
+	<img src="Images/choropleth_origin_1990.png" alt="1990 Emigration Choropleth" style="width:75%">
+	<br>
+	<p>The second image is the 2021 choropleth. Syria had at this point superceded Afghanistan as the country with most
+	emigrants and refugees, likely due to the situation in Afghanistan disallowing any Afghani people to leave the country
+	after the Taliban regained control of the country. The Syrian economy had been in freefall for much of 2020, with over
+	80% of Syrians living below the poverty line at the beginning of 2021. <br> 
+	<img src="Images/choropleth_origin_2021.png" alt="2021 Emigration Choropleth" style="width:75%">
+	
+	<h3>Emigration Journey Visualisations</h3>
+	
+	<p>These graphs are visualisations of the migrant patterns worldwide in the specified years. 
+	The data has been loaded from the United Nations HCR data storage and combined with geographic
+	data to make the visualisation. Again, although these are static images, any combination
+	of years and origin/destination countries would be easy to generate with the provided script.</p>
+	
+	<p>This first image shows the most common origin countries in 2000 as being (alphabetically) Afghanistan, China, 
+	Iran, Iraq, and Serbia. It is clear that the majority of emigrants from these countries go to Europe, while there 
+	is a strong movement pattern from China to the USA.</p>
+	
+	<img src="Images/patterns_origin_2000.png" alt="2000 Emigration Jouneys" style="width:75%">
+	
+	<p>From the second image we can see that by 2010 a lot of the emigration patterns had changed and dispersed. Russia 
+	has become one of the top 5 countries for number of emigrants, with the others being Afghanistan, China, Iraqm and Serbia. 
+	While the movement towards the USA and UK is still clear, Europe has a far more dispersed distribution of immigrants 
+	compared to 2010. Almost all of the Russian emigrants go to Europe rather than the USA.</p>
+	
+	<img src="Images/patterns_origin_2010.png" alt="2010 Emigration Jouneys" style="width:75%">
+	
+	<p>The Python script can be used to find the country with the highest number of emigrants every year, which is here 
+	demonstrated on 2015 to find that Syria had the highest number of emigrants at 382,513 recorded by the UN. These emigrants
+	almost all moved to Europe, particularly Germany, potentially pursuing onward journeys from there or potentially taking advantage
+	of the friendly attitude the German government had towards Syrian refugees.</p>
+	
+	<img src="Images/syria_origin_2015.png" alt="2015 Emigration From Syria" style="width:75%">
